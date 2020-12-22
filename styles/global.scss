@@ -1,3 +1,6 @@
+@use '~@fortawesome/fontawesome-svg-core/styles';
+@use '~react-toastify/dist/ReactToastify';
+
 *,
 ::before,
 ::after {
@@ -7,4 +10,10 @@
 	font-family: Arial, Helvetica, sans-serif;
 	border: none;
 	outline: none;
+}
+
+.Toastify__toast {
+	font-weight: bold;
+	padding-left: 16px;
+	border-radius: 5px;
 }
