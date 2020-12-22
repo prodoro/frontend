@@ -1,9 +1,14 @@
 import { NextPage } from 'next'
+import Head from 'next/head'
 
 import styles from 'styles/Home.module.scss'
 
 const Home: NextPage = () => (
-	<h1 className={styles.title}>Hello, world</h1>
+	<>
+		<Head>
+			<title key="title">prodoro</title>
+		</Head>
+	</>
 )
 
 export default Home

@@ -1,0 +1,29 @@
+.root {
+	display: flex;
+	align-items: center;
+	padding: 0 16px;
+	font-size: 18px;
+	color: var(--color);
+	background: transparent;
+	border: 2px solid var(--color);
+	border-radius: 8px;
+	transition: color 0.3s, background 0.3s, border-color 0.3s, transform 0.3s;
+	
+	&:hover {
+		background: var(--background-hover);
+	}
+	
+	&:active {
+		transform: translateY(-2px);
+	}
+}
+
+.name {
+	flex-grow: 1;
+	margin-right: 8px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	font-size: 16px;
+	font-weight: 900;
+}
